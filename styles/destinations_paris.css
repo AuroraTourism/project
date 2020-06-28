@@ -1,0 +1,179 @@
+body, html {
+    /*sizing so that the page takes up the entire screen for the hero image*/
+    height: 100%;
+    margin: 0;
+
+    background-color: #081725;
+}
+
+.hero-image {
+  /*determine background layer, with opacity mask on top for darkening*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/paris/brown-concrete-church-interior-2178696.jpg");
+
+  /*sizing so that the page takes up the entire screen*/
+  height: 50%;
+
+  /*positioning the image properly*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  object-fit: cover;
+}
+
+.hero-text {
+  /* Place text in the middle of the image */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1 { font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 64px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 50px; }
+h3 { font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 20px; }
+
+.box1 {
+  position: relative;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 10%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  overflow: auto;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  text-align: center;
+  color: white;
+}
+
+.textContainer {
+  width: 70%;
+  position: relative;
+  text-align: center;
+  left: 15%;
+  color: white;
+}
+
+.mapContainer {
+  position: relative;
+  text-align: center;
+}
+
+.mapImage {
+  width: 60%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.box2 {
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+  border: 1px solid white;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding: 10%;
+  color: white;
+}
+
+.packageButton {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  padding : 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.packageButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.sliderContainer {
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  width: 85%;
+  height: 0;
+  padding-bottom: 40%;
+  background: #4c4c4c;
+  border: solid 5px white;
+}
+
+.imgSlide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imgSlide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#img1, #img2, #img3, #img4, #img5 {
+  display: none;
+}
+
+.previous, .next { /* Image Slider Button  */
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(88,88,88,0.4);
+  cursor: pointer;
+}
+
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.navigation {
+  width: 100%;
+  height: 11px;
+  bottom: 15px;
+  position: absolute;
+  text-align: center;
+  z-index: 91;
+}
+
+.dots {
+  width: 15px;
+  height: 15px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#img1:checked ~ #one,
+#img2:checked ~ #two,
+#img3:checked ~ #three,
+#img4:checked ~ #four,
+#img5:checked ~ #five {
+  z-index: 90;
+}
+
+#img1:checked ~ .navigation #dot1,
+#img2:checked ~ .navigation #dot2,
+#img3:checked ~ .navigation #dot3,
+#img4:checked ~ .navigation #dot4,
+#img5:checked ~ .navigation #dot5 {
+  background-color: white;
+}
