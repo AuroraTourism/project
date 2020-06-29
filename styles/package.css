@@ -82,7 +82,7 @@ header nav a:hover::before{
   /*determine background layer, with opacity mask on top for darkening*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/igloo.jpg");
 
-  /*sizing so that the page takes up the entire screen*/
+  /*sizing so that the page takes up the half screen*/
   height: 50%;
 
   /*positioning the image properly*/
@@ -202,7 +202,7 @@ hr {
   padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes one column instead on three */
 @media screen and (max-width: 800px) {
   .main{
     min-width: 200px;
@@ -219,7 +219,7 @@ hr {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout -  */
 
 .chobi{
   /*image size*/
