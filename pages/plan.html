@@ -5,6 +5,7 @@
     <title>AURORA TOURISM | HOW TO PLAN YOUR VACATION?</title>
     <link rel="stylesheet" href="../styles/plan.css">
     <script src="https://use.fontawesome.com/fdf05d22fc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <header>
       <nav>
@@ -47,10 +48,23 @@
       <hr>
 
       <h3 class="reply">LEAVE A REPLY</h3>
-      <textarea class="comment" name="comment" placeholder="Enter your comment here..."></textarea>
-      <br>
-      <button class="button" type="submit" name="button">Submit</button>
-      <br>
+      <div class="form">
+        <input type="text" class="name" id="name" placeholder="Enter your name." required> <br>
+        <textarea class="comment" name="comment" id="bodyText" placeholder="Enter your comment here..." required></textarea>
+        <br>
+        <input type="button" class="button" id="addComment" name="button" value="Submit">
+        <br>
+      </div>
+
+      <hr>
+
+      <div id="container">
+
+      </div>
+
+      <hr>
+
+      <script src="../js/post.js"></script>
 
   </body>
   <footer>
