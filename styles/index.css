@@ -164,3 +164,73 @@ h3 { font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqu
     left: 0;
     top: 0;
 }
+
+#slideshow1 {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide1 {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slideshow2 {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide2 {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slideshow3 {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide3 {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slideshow4 {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide4 {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slideshow5 {
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide5 {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
