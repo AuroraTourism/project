@@ -116,6 +116,15 @@ header nav a:hover::before {
   line-height: 20px;
 }
 
+p {
+  margin-left: 12em;
+  margin-right: 12em;
+  text-align: justify;
+  line-height: 1.6;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  color: white;
+}
+
 .block-quote {
   border-left: 4px solid #FFF;
   border-left-width: 4px;
@@ -177,6 +186,15 @@ hr {
   color: white;
 }
 
+.name {
+  text-align: center;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .comment {
   height: 50px;
   width: 300px;
@@ -218,8 +236,52 @@ hr {
 .footer p {
   color: white;
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .footer a {
   color: white;
+}
+
+.commentBox {
+  padding: 1%;
+  width: 75%;
+  border: 1px solid #fff;
+  background-color: #081725;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user {
+  color: white;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+
+.commenting {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.leftPanelImg {
+  width: 10%;
+  float: left;
+}
+
+.leftPanelImg img {
+  border-radius: 100%;
+  width: 50%;
+  margin-left: 17em;
+  margin-right: 17em;
+}
+
+.rightPanel {
+  width: 85%;
+  float: left;
+  margin-left: 1%;
+}
+
+.clear {
+  clear:both;
 }
