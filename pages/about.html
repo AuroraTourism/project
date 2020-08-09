@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/contact_Us.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <script src="https://use.fontawesome.com/fdf05d22fc.js"></script>
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+
+        }
+
+        .active, .accordion:hover {
+          background-color: #ccc;
+        }
+
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+
+        .accordion:after {
+          content: '\02795'; /* Unicode character for "plus" sign (+) */
+          font-size: 13px;
+          color: #777;
+          float: right;
+          margin-left: 5px;
+        }
+
+        .active:after {
+          content: "\2796"; /* Unicode character for "minus" sign (-) */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact_Us.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero-image">
+    <div class="hero-text">
+        <h1>ABOUT</h1>
+        <h3>TRAVEL THE WORLD!</h3>
+    </div>
+</section>
+
+
+<div class="" style="padding:10px">
+    <div class="">
+        <iframe align="" width="100%" height="450" src="https://www.youtube.com/embed/0MfneG2aWPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+
+        <h2 style="text-align:center;">Our Details</h2>
+
+        <br>
+
+
+        <button class="accordion">About this site</button>
+        <div class="panel">
+            <p>The AURORA TOURISM is the flagship digital consumer brand within the AURORA TOURISM Travel Media portfolio. A comprehensive guide to the world's best travel destinations, its print heritage stretches back 1 years, with the online portal reaching its 1st-year anniversary in 2020. Available in English,Bangla,Hindi,Malay, German, French and Spanish versions, the WTG provides detailed and accurate travel content designed to inspire global travellers. It covers all aspects, from cities to airports, cruise ports to ski and beach resorts, attractions to events, and it also includes weekly travel news, features and quizzes. Updated every day by a dedicated global editorial team, the portal logs 1 million+ unique users monthly.</p>
+        </div>
+
+        <button class="accordion">Who we are</button>
+        <div class="panel">
+            <p>The AURORA TOURISM is one of the most respected and successful names in the global travel industry, with a long and rich company heritage spanning 1 year. The definitive resource for global travel content, its reputation has been built on journalistic credibility. CTM is dedicated to the provision of objective, accurate, informative and reliable travel content in various formats, including the World Travel Guide for consumers, Columbus Travel Professional for travel industry professionals and extensive licensed and bespoke content for commercial partners through its specialist division, Columbus Content Solutions. A fast-growing, pioneering and diverse global travel content business, contact us to find out more about us.</p>
+        </div>
+
+        <button class="accordion">Our team</button>
+        <div class="panel">
+            <p>We have been travelling the world for over 1 year, building a reputation for providing quality travel content that's inspiring, engaging and informative. With all of our guides and features written and updated by a global network of expert travel writers that includes some of the best names in the business, we pride ourselves on producing content that stands out from the crowd. Regrettably, we aren't able to accept guest posts and won't be able to reply to guest post requests.</p>
+        </div>
+
+        <br>
+
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+        <p> ® copyright 2020 | AURORA TOURISM</p>
+    </div>
+</footer>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+    panel.style.display = "none";
+    } else {
+    panel.style.display = "block";
+    }
+    });
+    }
+</script>
+
+
+</body>
+</html>
